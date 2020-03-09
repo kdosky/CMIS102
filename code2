@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main ()
+{
+  /* variable definition: */
+  int x, y, z; 
+
+  /* variable initialization */
+  x = 10;
+  y = 20;  
+  z = x + y;
+  printf("Integers (x,y) and sum (z) are : %d,%d,%d \n", x,y,z);  
+   return 0;
+}
