@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+  // variable declarations:
+  char name [100];
+  float sum, grade, average;
+  int students, exams;
+
+  // loop through 5 students
+  for (students = 0; students < 5; students++) {
+    printf ("Enter 3 grades and student name: ");
+    sum = 0;
+    for (exams = 0; exams < 3; exams++) {
+      // float uses %f, double uses %lf
+      scanf ("%f", &grade);
+      sum = sum + grade;
+    } // end for each exam
+    average = sum / 3;
+    scanf ("%s", name);
+    printf ("Average for %s is %.2f\n", name, average);
+  } // end for each student
+  printf("... Bye ...\n");
+  return 0;
+} // end main
